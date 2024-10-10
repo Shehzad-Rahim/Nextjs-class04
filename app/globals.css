@@ -13,12 +13,25 @@
     --foreground: #ededed;
   }
 }
-
+ 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+nav ul li:hover{
+  color: black;
+  transition: all 0.6s ease-in-out;
+}
+nav ul .down:hover{
+  text-shadow: 2px 15px 1px red;
+}
+nav ul .up:hover{
+  text-shadow: -2px -15px 1px red;
+}
+
+
 
 @layer utilities {
   .text-balance {
